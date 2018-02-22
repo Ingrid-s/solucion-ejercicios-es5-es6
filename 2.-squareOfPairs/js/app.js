@@ -13,6 +13,22 @@ var array = [2, 4, 6];
 
 function square () {
   // escribe tu código aqui...
+  function square (numbers) {
+    // escribe tu código aqui...
+    var alCuadrado = numbers.map(function(num){
+      if(num % 2 === 0){
+        console.log(num * num);
+        return num * num;
+      }else{
+        console.log(num);
+        return num;
+      }
+      console.log(alCuadrado);
+      return alCuadrado;
+    });
+  }
+  
+  square(array);
 }
 
 square(array);
@@ -27,7 +43,18 @@ square(array);
 
 
 // declara la funcion y ejecuta el código
-
+// const square = (numbers) => {
+//   const alCuadrado = numbers.map((num) => {
+//      if (num % 2 === 0) {
+//        console.log(num * num);
+//        return num * num;
+//      }
+//      console.log( num);
+//      return num;
+//    });
+//   console.log( alCuadrado); 
+//   return alCuadrado;
+//  };		 
 
 
 
